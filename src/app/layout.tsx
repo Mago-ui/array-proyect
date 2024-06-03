@@ -3,14 +3,13 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
 import React from 'react';
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
