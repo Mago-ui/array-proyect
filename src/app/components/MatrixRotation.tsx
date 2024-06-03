@@ -4,8 +4,8 @@ import MatrixDisplay from './MatrixDisplay';
 
 const MatrixRotation: React.FC = () => {
   const [N, setN] = useState<number>(0);
-  const [matrix, setMatrix] = useState<number[][]>([]);
-  const [originalMatrix, setOriginalMatrix] = useState<number[][]>([]);
+  const [matrix, setMatrix] = useState<number[][]>([[]]); 
+  const [originalMatrix, setOriginalMatrix] = useState<number[][]>([[]]); 
   const [error, setError] = useState<string | null>(null);
 
   const handleChangeN = (event: React.ChangeEvent<HTMLInputElement>) => {
